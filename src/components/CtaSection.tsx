@@ -4,7 +4,7 @@ import { ArrowRight, Gift, Star } from "lucide-react";
 
 const CtaSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white relative overflow-hidden">
+    <section className="py-20 bg-blue-600 text-white relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -16,10 +16,10 @@ const CtaSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 mb-8">
             <Gift className="w-4 h-4 mr-2" />
-            <span className="font-semibold text-sm">Limited Time: $5 Signup Bonus</span>
+            <span className="font-medium text-sm">Limited Time: $5 Signup Bonus</span>
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-medium mb-6 leading-tight">
             Ready to Start Earning?
           </h2>
           
@@ -35,19 +35,19 @@ const CtaSection = () => {
                   <Star key={i} className="w-5 h-5 text-yellow-300 fill-current" />
                 ))}
               </div>
-              <span className="font-semibold">4.9/5 Rating</span>
+              <span className="font-medium">4.9/5 Rating</span>
             </div>
             <div className="hidden sm:block h-6 w-px bg-white/30"></div>
-            <div className="font-semibold">50,000+ Happy Users</div>
+            <div className="font-medium">50,000+ Happy Users</div>
             <div className="hidden sm:block h-6 w-px bg-white/30"></div>
-            <div className="font-semibold">$2M+ Paid Out</div>
+            <div className="font-medium">$2M+ Paid Out</div>
           </div>
 
           {/* CTA Button */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button 
               size="lg" 
-              className="bg-white text-purple-600 hover:bg-gray-100 font-bold px-10 py-4 text-lg rounded-xl shadow-2xl hover:shadow-white/25 transform hover:scale-105 transition-all duration-300"
+              className="bg-white text-blue-600 hover:bg-gray-50 font-semibold px-10 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Claim Your $5 Instantly!
               <ArrowRight className="ml-2 w-5 h-5" />

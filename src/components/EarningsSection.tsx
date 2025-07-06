@@ -55,11 +55,11 @@ const EarningsSection = () => {
   ];
 
   return (
-    <section id="earnings" className="py-20 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
+    <section id="earnings" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            <span className="text-gradient">Real Earnings</span> from Real Users
+          <h2 className="text-4xl md:text-5xl font-medium mb-6 text-gray-900">
+            <span className="text-blue-600">Real Earnings</span> from Real Users
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             See how much you can earn with different task types. Our users consistently earn between $500-$2,000 monthly.
@@ -69,12 +69,12 @@ const EarningsSection = () => {
         {/* Earning Stats */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {earningStats.map((stat, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 border-0 bg-white/80 backdrop-blur-sm">
+            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300 border border-gray-100">
               <CardContent className="p-6">
-                <div className={`inline-flex p-3 rounded-full bg-gray-100 ${stat.color} mb-4`}>
+                <div className={`inline-flex p-3 rounded-full bg-gray-50 ${stat.color} mb-4`}>
                   {stat.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   {stat.amount}
                 </h3>
                 <p className="text-gray-600">
@@ -87,20 +87,20 @@ const EarningsSection = () => {
 
         {/* User Testimonials */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          <h3 className="text-3xl font-medium text-center mb-12 text-gray-800">
             Success Stories from Our Community
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="glass-effect hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100">
                 <CardContent className="p-6">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
+                    <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-semibold text-xl mx-auto mb-3">
                       {testimonial.avatar}
                     </div>
-                    <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
-                    <div className="text-2xl font-black text-green-600 mt-2">
+                    <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                    <div className="text-2xl font-bold text-green-600 mt-2">
                       {testimonial.amount}
                     </div>
                     <p className="text-sm text-gray-500">{testimonial.period}</p>

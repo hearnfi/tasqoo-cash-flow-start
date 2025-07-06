@@ -32,7 +32,7 @@ const PartnersSection = () => {
     <section id="partners" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
             <span className="text-gradient">Trusted Partners</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

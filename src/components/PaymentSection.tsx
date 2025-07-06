@@ -40,7 +40,7 @@ const PaymentSection = () => {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
             <span className="text-gradient">Fast & Secure</span> Payments
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
